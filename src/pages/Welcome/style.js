@@ -14,7 +14,8 @@ export default StyleSheet.create({
         color: '#1D1D1D',
         fontSize: 24,
         fontWeight: 'bold',
-        paddingTop: 50
+        paddingTop: 50,
+        textAlign: 'center'
       },
 
       action: {
@@ -46,6 +47,7 @@ export default StyleSheet.create({
          height: 40, 
          backgroundColor: '#F3F7F6',
          borderRadius: 2,
+         textAlign: 'center',
       }
 
 
