@@ -12,7 +12,7 @@ export default function Routes() {
         <NavigationContainer>
             <AppStack.Navigator screenOptions={ {headerShown: false} }>
                 <AppStack.Screen name="Welcome" component={Welcome}></AppStack.Screen>
-                {/* <AppStack.Screen name="Welcome" component={Home}></AppStack.Screen> */}
+                <AppStack.Screen name="Home" component={Home}></AppStack.Screen>
             </AppStack.Navigator>
         </NavigationContainer>
     )
