@@ -49,8 +49,4 @@ export default StyleSheet.create({
          borderRadius: 2,
          textAlign: 'center',
       }
-
-
-
-
 })
