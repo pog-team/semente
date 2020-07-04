@@ -27,7 +27,7 @@ export default function Welcome() {
         placeholder="Digite seu nome"
         
         ></TextInput>
-        <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Storys')}>
           <Text style={styles.actionText}>Entrar</Text>
         </TouchableOpacity>
         
