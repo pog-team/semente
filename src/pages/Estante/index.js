@@ -60,11 +60,6 @@ export default function Estante() {
                     <Text style={styles.buttom}>Continuar</Text>
                     </View>
                 </View>
-
-
-
-
-
             </View>
         </View>
     )

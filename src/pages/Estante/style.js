@@ -26,7 +26,7 @@ export default StyleSheet.create({
     },
 
     bookcase: {
-  
+    
     },
 
     book: {

@@ -7,8 +7,6 @@ import { FlatList } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { preventAutoHide } from 'expo/build/launch/SplashScreen';
 
-
-
 const data = [
   { id: '00001', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00002', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
@@ -57,17 +55,18 @@ const numColumns = 3;
    return (
     <SafeAreaView style={styles.contain}>
       <Image style={styles.logo} source={logo}/>
-
+      
       <TextInput
       style={styles.SearchBar}
       placeholder= "Pesquisar pelo titulo, autor, categoria">
-       
       </TextInput>
+
     <View style={styles.box}>
       <Text style={{ fontSize: 18, textAlign: 'left'}}>
-        <Text style={{fontWeight: 'bold', fontSize: 18, }}>Plantando certezas para o futuro </Text>
-         Interaja com os livros para descobrir novas  aventuras e soltar sua 
+        <Text style={{fontWeight: 'bold', fontSize: 18, color:'#fff' }}>Plantando certezas para o futuro </Text>
+        <Text style={{fontWeight: 'bold', color:'#2e96ff', fontSize: 15}}>Interaja com os livros para descobrir novas  aventuras e soltar sua 
         imaginação
+        </Text> 
       </Text>
     </View>
       <Text style={{fontSize: 18, left: 5,fontWeight: 'bold', paddingBottom: 5,}}>
@@ -131,7 +130,7 @@ const styles = StyleSheet.create({
     
   },
   box: {
-    backgroundColor: '#aec',
+    backgroundColor: '#83cbf2',
     color:'#eee333',
     width: 345,
     height: 150,
