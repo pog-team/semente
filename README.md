@@ -1,6 +1,4 @@
-<style>
-  .wrap { margin: 0 auto; background-color: #fff; }
-</style>
+
 <div class="wrap">
 <h1 align="center">  Semente  </h1>
 
