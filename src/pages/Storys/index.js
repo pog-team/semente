@@ -36,12 +36,14 @@ export default function Welcome() {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-            <TouchableOpacity style={styles.action} onPress={() => playsound()}>
+           
                 <Text style={styles.headerTexts}>X</Text>
-                </TouchableOpacity>   
+               
                 <Text style={styles.headerTexts}>FIM</Text>
+                <TouchableOpacity  onPress={() => playsound()}>
                 <Image source={Sound_Icon} style={styles.sound}>
                 </Image>
+                </TouchableOpacity>   
             </View>
             <View style={styles.book}>
                 <Image source={Hover} style={styles.hover}>

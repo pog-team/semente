@@ -15,6 +15,7 @@ import Routes_Pause from './pages/Story_Pause'
 
 import Bookcases from './pages/Categoria'
 import Fabulas from './pages/Fabulas'
+import Estante from './pages/Estante'
 
 
 
@@ -33,6 +34,8 @@ export default function Routes() {
                 <AppStack.Screen name="Storys" component={Storys}></AppStack.Screen>
                 <AppStack.Screen name="Routes_Story" component={Routes_Story}></AppStack.Screen>
                 <AppStack.Screen name="Routes_Pause" component={Routes_Pause}></AppStack.Screen>
+
+                <AppStack.Screen name="Estante" component={Estante}></AppStack.Screen>
 
             </AppStack.Navigator>
         </NavigationContainer>
