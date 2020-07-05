@@ -25,6 +25,7 @@ export default function Welcome() {
         <Text style={styles.textHero}>Qual seu nome?</Text>
         <TextInput 
         style={styles.TextLabel}
+leOpacity style={styles.action} onPress={() => navigation.navigate('categoria')}>
 
 
 
@@ -34,9 +35,6 @@ export default function Welcome() {
 
         </TextInput>
         <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Home')}>
-
-
-
           <Text style={styles.actionText}>Entrar</Text>
         </TouchableOpacity> 
     </View>
