@@ -31,11 +31,8 @@ export default StyleSheet.create({
 
 
     book1: {
-      paddingTop: 220
-    },
-
-    book2: {
-      paddingTop: 170
+      paddingTop: 20
+    
     },
 
     
@@ -70,9 +67,11 @@ export default StyleSheet.create({
         fontWeight: 'bold',
         paddingTop: 10
 
-      }
+      },
 
-      
+      contentContainer: {
+        marginLeft: 10,
+      },
 
 
 
