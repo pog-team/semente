@@ -23,9 +23,6 @@ export default function Emocional() {
                 <FontAwesome name="user-circle-o" size={71} color="#192742" style={styles.icon} />
             </View>
 
-
-            
-
             <View style={styles.grid}>
                 <Image source={emojiHappy} style={styles.icon2}></Image>
                 <Image source={emojiNeutral} style={styles.icon3}></Image>

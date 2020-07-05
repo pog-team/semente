@@ -7,11 +7,6 @@ import logoHero from '../../assets/img/logo.png'
 
 
 
-
-
-
-
-
 export default function Welcome() {
   const navigation = useNavigation()
 
@@ -30,15 +25,20 @@ export default function Welcome() {
         <Text style={styles.textHero}>Qual seu nome?</Text>
         <TextInput 
         style={styles.TextLabel}
-        placeholder="Digite seu nome"
-        
-        ></TextInput>
-        <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Storys')}>
+
+
+
+
+
+        placeholder= "Digite seu nome ">
+
+        </TextInput>
+        <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Home')}>
+
+
+
           <Text style={styles.actionText}>Entrar</Text>
-        </TouchableOpacity>
-        
+        </TouchableOpacity> 
     </View>
   );
 }
-
-
