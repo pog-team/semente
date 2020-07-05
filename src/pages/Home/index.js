@@ -56,6 +56,7 @@ const numColumns = 3;
     <SafeAreaView style={styles.contain}>
       <Image style={styles.logo} source={logo}/>
       
+    <View style={{alignItems: 'center'}}>
       <TextInput
       style={styles.SearchBar}
       placeholder= "Pesquisar pelo titulo, autor, categoria">
@@ -64,10 +65,11 @@ const numColumns = 3;
     <View style={styles.box}>
       <Text style={{ fontSize: 18, textAlign: 'left'}}>
         <Text style={{fontWeight: 'bold', fontSize: 18, color:'#fff' }}>Plantando certezas para o futuro </Text>
-        <Text style={{fontWeight: 'bold', color:'#2e96ff', fontSize: 15}}>Interaja com os livros para descobrir novas  aventuras e soltar sua 
+        <Text style={{fontWeight: '300', color:'#fff', fontSize: 14}}>Interaja com os livros para descobrir novas  aventuras e soltar sua 
         imaginação
-        </Text> 
+        </Text>
       </Text>
+      </View>
     </View>
       <Text style={{fontSize: 18, left: 5,fontWeight: 'bold', paddingBottom: 5,}}>
       Indicando para você
@@ -120,7 +122,7 @@ const styles = StyleSheet.create({
   },
   SearchBar: {
     height: 40, 
-    width: 345,
+    width: 390,
     borderColor: 'gray', 
     borderWidth: 1, 
     marginTop: 0, 
@@ -130,11 +132,11 @@ const styles = StyleSheet.create({
     
   },
   box: {
-    backgroundColor: '#83cbf2',
+    backgroundColor: 'rgba(168,50,107,0.8)',
     color:'#eee333',
-    width: 345,
-    height: 150,
-    margin: 35,
+    width: 390,
+    height: 100,
+    margin: 25,
     padding: 15,
     borderRadius: 10,
   }
