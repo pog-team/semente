@@ -22,31 +22,43 @@ export default function Estante() {
 
                 <View style={styles.book}>
                     <Image source={hover_book} style={styles.Image}></Image>
+                    <View style={styles.txtWrap}>
                     <Text style={styles.titleBooks}>The tiny Dragon</Text>
-                    <Text style={styles.authorBooks}>The tiny Dragon</Text>
+                    <Text style={styles.authorBooks}>Gustavo Luan</Text>
                     <Text style={styles.date}>Adicionado 02/07 as 01:34</Text>
+                    <Text style={styles.buttom}>Continuar</Text>
+                    </View>
                 </View>
 
-                <View style={styles.book1}>
+                <View style={styles.book}>
                     <Image source={hover_book} style={styles.Image}></Image>
+                    <View style={styles.txtWrap}>
                     <Text style={styles.titleBooks}>The tiny Dragon</Text>
-                    <Text style={styles.authorBooks}>The tiny Dragon</Text>
+                    <Text style={styles.authorBooks}>Gustavo Luan</Text>
                     <Text style={styles.date}>Adicionado 02/07 as 01:34</Text>
+                    <Text style={styles.buttom}>Continuar</Text>
+                    </View>
                 </View>
 
 
                 <View style={styles.book}>
                     <Image source={hover_book} style={styles.Image}></Image>
+                    <View style={styles.txtWrap}>
                     <Text style={styles.titleBooks}>The tiny Dragon</Text>
-                    <Text style={styles.authorBooks}>The tiny Dragon</Text>
+                    <Text style={styles.authorBooks}>Gustavo Luan</Text>
                     <Text style={styles.date}>Adicionado 02/07 as 01:34</Text>
+                    <Text style={styles.buttom}>Continuar</Text>
+                    </View>
                 </View>
 
-                <View style={styles.book1}>
+                <View style={styles.book}>
                     <Image source={hover_book} style={styles.Image}></Image>
+                    <View style={styles.txtWrap}>
                     <Text style={styles.titleBooks}>The tiny Dragon</Text>
-                    <Text style={styles.authorBooks}>The tiny Dragon</Text>
+                    <Text style={styles.authorBooks}>Gustavo Luan</Text>
                     <Text style={styles.date}>Adicionado 02/07 as 01:34</Text>
+                    <Text style={styles.buttom}>Continuar</Text>
+                    </View>
                 </View>
 
 

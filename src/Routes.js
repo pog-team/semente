@@ -5,7 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 const AppStack = createStackNavigator()
 
 import Welcome from './pages/Welcome'
-import Home from './pages/Home'
+import Home from './pages/Estante'
 import Emocional from './pages/Emocional'
 
 import Storys from './pages/Storys'

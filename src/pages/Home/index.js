@@ -16,6 +16,9 @@ const data = [
   { id: '00004', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00005', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
+  { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
+  { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
+  { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
 ];
 
 const formatData = (data, numColumns) => {
@@ -102,6 +105,7 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 2,
     height: Dimensions.get('window').width / numColumns,
+
   },
   itemInvisable: {
     backgroundColor: 'transparent',
