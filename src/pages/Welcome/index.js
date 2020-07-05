@@ -6,12 +6,16 @@ import styles from './style'
 import logoHero from '../../assets/img/logo.png'
 
 
+
 export default function Welcome() {
   const navigation = useNavigation()
 
 
   return (
-    <View style={styles.container}>
+   
+   
+   <View style={styles.container}>
+     
       <Image
         style={styles.logoHero}
         source={logoHero}
@@ -22,10 +26,16 @@ export default function Welcome() {
         <TextInput 
         style={styles.TextLabel}
 
+
+
+
+
         placeholder= "Digite seu nome ">
 
         </TextInput>
         <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Home')}>
+
+
 
           <Text style={styles.actionText}>Entrar</Text>
         </TouchableOpacity> 
