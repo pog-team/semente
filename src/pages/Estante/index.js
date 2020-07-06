@@ -47,7 +47,9 @@ export default function Estante() {
                     <Text style={styles.titleBooks}>The tiny Dragon</Text>
                     <Text style={styles.authorBooks}>Gustavo Luan</Text>
                     <Text style={styles.date}>Adicionado 02/07 as 01:34</Text>
+                    
                     <Text style={styles.buttom}>Continuar</Text>
+                    
                     </View>
                 </View>
 

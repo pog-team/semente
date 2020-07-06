@@ -65,11 +65,11 @@ export default StyleSheet.create({
    buttom: {
     width: 150,
     height: 50,
-    borderRadius: 20,
-    marginTop: 5,
+   textAlign: "center",
+   justifyContent:"center",
+    marginTop: 10,
     backgroundColor: '#ae2',
     color: '#000',
-    alignItems: 'center',
    
    },
 

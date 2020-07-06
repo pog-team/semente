@@ -64,9 +64,12 @@ const numColumns = 3;
 
     <View style={styles.box}>
       <Text style={{ fontSize: 18, textAlign: 'left'}}>
-        <Text style={{fontWeight: 'bold', fontSize: 16, color:'#fff' }}>Semeando conhecimento para o futuro </Text>
-        <Text style={{fontWeight: '300', color:'#fff', fontSize: 14}}>Interaja com os livros para descobrir novas  aventuras e soltar sua 
-        imaginação
+        <Text style={{fontWeight: 'bold', fontSize: 16, color:'#fff' }}>
+        Semeando conhecimento para o futuro 
+      </Text>
+
+        <Text style={{fontWeight: '300', color:'#fff', fontSize: 14}}>
+        Interaja com os livros para descobrir novas  aventuras e soltar sua imaginação
         </Text>
       </Text>
       </View>
