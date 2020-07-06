@@ -1,13 +1,14 @@
 import { StyleSheet } from 'react-native'
 import Constants from 'expo-constants'
 import { color } from 'react-native-reanimated'
+import { Grid } from 'react-native-easy-grid'
 
 export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 34,
-        backgroundColor: '#FEFEFE'
+        paddingTop: Constants.statusBarHeight + 35,
+        backgroundColor: '#FEFEFE',
     },
 
     header: {
@@ -25,28 +26,60 @@ export default StyleSheet.create({
     },
 
     bookcase: {
-      paddingTop: 15
-    },
-
-
-
-    book1: {
-      paddingTop: 20
     
     },
 
-    
+    book: {
+  
+    },
+
+    txtWrap: {
+      position: "relative",
+      color: '#fff',
+      bottom: 180,
+      left: 155,
+      borderRadius: 20,
+    },
 
     Image: {
       height: 185,
-      width: 145
+      width: 145,
+      position: "relative",
+      right: 15,
+
     },
 
-   
+   titleBooks: {
+    fontWeight: 'bold',
+    fontSize: 18,
+   },
+   authorBooks: {
+    fontSize: 16,
+   },
+
+   date: {
+    fontSize: 12,
+    color: '#aa9',
+   },
+
+   buttom: {
+    width: 150,
+    height: 50,
+    borderRadius: 5,
+    marginTop: 5,
+    backgroundColor: '#192742',
+    color: '#fff',
+    alignItems: 'center',
+   textAlign: "center",
+   justifyContent: "center",
+   padding: 10
+  
+   },
+
       TitleText: {
           color: '#1B1C1E',
           fontWeight: "bold",
-          fontSize:20,
+          fontSize:18,
           textAlign: "center",
           paddingTop: 10
       },

@@ -1,20 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Image, Dimensions,} from 'react-native';
 import logo from '../../assets/img/logo.png';
-
+import cover from '../../assets/img/Hover_Book.png';
 import { render } from 'react-dom';
 import { FlatList } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { preventAutoHide } from 'expo/build/launch/SplashScreen';
 
+import home_icon from '../../assets/img/Home.png';
+import heart_icon from '../../assets/img/heart.png';
+import book_icon from '../../assets/img/Book.png';
+
 
 const data = [
-  { id: '00001', title: 'Book 01' }, 
-  { id: '00002', title: 'Book 02' }, 
-  { id: '00003', title: 'Book 03' },
-  { id: '00004', title: 'Book 04' }, 
-  { id: '00005', title: 'Book 05' }, 
-  { id: '00006', title: 'Book 06' }
+  { id: '00001', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
+  { id: '00002', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
+  { id: '00003', title: <Image style={{width:130, height:130,}} source={cover}/> },
+  { id: '00004', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
+  { id: '00005', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
+  { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
 ];
 
 const formatData = (data, numColumns) => {
@@ -55,14 +59,14 @@ const numColumns = 3;
       <Image style={styles.logo} source={logo}/>
 
       <TextInput
-      style={styles.SearchBar}>
-        <Text>Pesquisar pelo titulo, autor, categoria 
-        </Text>
+      style={styles.SearchBar}
+      placeholder= "Pesquisar pelo titulo, autor, categoria">
+       
       </TextInput>
     <View style={styles.box}>
-      <Text>
-        Plantando certezas para o futuro Interaja com 
-        os livros para descobrir novas  aventuras e soltar sua 
+      <Text style={{ fontSize: 18, textAlign: 'left'}}>
+        <Text style={{fontWeight: 'bold', fontSize: 18, }}>Plantando certezas para o futuro </Text>
+         Interaja com os livros para descobrir novas  aventuras e soltar sua 
         imaginação
       </Text>
     </View>
@@ -91,16 +95,15 @@ const styles = StyleSheet.create({
   },
   container:{
     flex: 1,
-    marginVertical: 0,
     backgroundColor: '#fff'
   },
 
   item: {
-    backgroundColor: '#aee',
+    
     alignItems: 'center',
     justifyContent:'center',
     flex: 1,
-    margin: 1,
+    margin: 2,
     height: Dimensions.get('window').width / numColumns,
   },
   itemInvisable: {
@@ -135,4 +138,5 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
   }
+
 });

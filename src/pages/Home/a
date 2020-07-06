@@ -1,0 +1,9 @@
+ <View style={styles.BottomTabs}>
+        <Image source={home_icon} style={styles.icon}></Image>
+        <Image source={heart_icon} style={styles.icon}></Image>
+        <Image source={book_icon} style={styles.icon}></Image>
+      </View>
+
+      import home_icon from '../../assets/img/Home.png'
+import heart_icon from '../../assets/img/heart.png'
+import book_icon from '../../assets/img/Book.png'
