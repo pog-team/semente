@@ -65,6 +65,7 @@ export default StyleSheet.create({
    buttom: {
     width: 150,
     height: 50,
+
     borderRadius: 5,
     marginTop: 5,
     backgroundColor: '#192742',
@@ -74,6 +75,8 @@ export default StyleSheet.create({
    justifyContent: "center",
    padding: 10
   
+
+
    },
 
       TitleText: {

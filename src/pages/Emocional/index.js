@@ -29,9 +29,6 @@ export default function Emocional() {
                 <FontAwesome name="user-circle-o" size={71} color="#192742" style={styles.icon} />
             </View>
 
-
-            
-
             <View style={styles.grid}>
             <TouchableOpacity onPress={() => navigation.navigate('Story_Pause')}>
                 <Image source={emojiHappy} style={styles.icon2} />

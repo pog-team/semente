@@ -25,6 +25,7 @@ export default function Estante() {
                 <View style={styles.book}>
                     <Image source={hover_book} style={styles.Image}></Image>
                     <View style={styles.txtWrap}>
+
                     <Text style={styles.titleBooks}>Kaili,a pequena sonhadora</Text>
                     <Text style={styles.authorBooks}>Equipe Semente</Text>
                     <Text style={styles.date}>Adicionado 05/07 as 01:34</Text>
@@ -32,6 +33,7 @@ export default function Estante() {
                     <TouchableOpacity onPress={() => navigation.navigate('Routes_Pause')}>
                     <Text style={styles.buttom}>Continuar</Text>
                     </TouchableOpacity>
+
                     </View>
                 </View>
 
@@ -52,7 +54,11 @@ export default function Estante() {
                     <Text style={styles.titleBooks}>The tiny Dragon</Text>
                     <Text style={styles.authorBooks}>Gustavo Luan</Text>
                     <Text style={styles.date}>Adicionado 02/07 as 01:34</Text>
+
                     <Text style={styles.buttom}>Continuar</Text>
+
+                    
+
                     </View>
                 </View>
 

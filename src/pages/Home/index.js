@@ -7,9 +7,11 @@ import { FlatList } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { preventAutoHide } from 'expo/build/launch/SplashScreen';
 
+
 import home_icon from '../../assets/img/Home.png';
 import heart_icon from '../../assets/img/heart.png';
 import book_icon from '../../assets/img/Book.png';
+
 
 
 const data = [
@@ -19,6 +21,8 @@ const data = [
   { id: '00004', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00005', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
+
+
 ];
 
 const formatData = (data, numColumns) => {
@@ -57,18 +61,28 @@ const numColumns = 3;
    return (
     <SafeAreaView style={styles.contain}>
       <Image style={styles.logo} source={logo}/>
-
+      
+    <View style={{alignItems: 'center'}}>
       <TextInput
       style={styles.SearchBar}
       placeholder= "Pesquisar pelo titulo, autor, categoria">
-       
+
       </TextInput>
+
     <View style={styles.box}>
       <Text style={{ fontSize: 18, textAlign: 'left'}}>
-        <Text style={{fontWeight: 'bold', fontSize: 18, }}>Plantando certezas para o futuro </Text>
-         Interaja com os livros para descobrir novas  aventuras e soltar sua 
-        imaginação
+
+
+        <Text style={{fontWeight: 'bold', fontSize: 16, color:'#fff' }}>
+        Semeando conhecimento para o futuro 
       </Text>
+
+        <Text style={{fontWeight: '300', color:'#fff', fontSize: 14}}>
+        Interaja com os livros para descobrir novas  aventuras e soltar sua imaginação
+        </Text>
+
+      </Text>
+      </View>
     </View>
       <Text style={{fontSize: 18, left: 5,fontWeight: 'bold', paddingBottom: 5,}}>
       Indicando para você
@@ -105,6 +119,7 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 2,
     height: Dimensions.get('window').width / numColumns,
+
   },
   itemInvisable: {
     backgroundColor: 'transparent',
@@ -120,7 +135,7 @@ const styles = StyleSheet.create({
   },
   SearchBar: {
     height: 40, 
-    width: 345,
+    width: 390,
     borderColor: 'gray', 
     borderWidth: 1, 
     marginTop: 0, 
@@ -130,11 +145,11 @@ const styles = StyleSheet.create({
     
   },
   box: {
-    backgroundColor: '#aec',
+    backgroundColor: 'rgba(168,50,107,0.8)',
     color:'#eee333',
-    width: 345,
-    height: 150,
-    margin: 35,
+    width: 390,
+    height: 100,
+    margin: 25,
     padding: 15,
     borderRadius: 10,
   }
