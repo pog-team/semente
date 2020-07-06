@@ -1,33 +1,75 @@
-import * as React from 'react';
-import { BottomNavigation, Text } from 'react-native-paper';
+import React, { useCallback } from 'react'
+import { View, Text } from 'react-native'
+import { createNavigator, TabRouter } from 'react-navigation'
+import BottomNavigation, {
+  FullTab
+} from 'react-native-material-bottom-navigation'
+import Icon from '@expo/vector-icons/MaterialCommunityIcons'
 
-const MusicRoute = () => <Text>Music</Text>;
+// Screens. Normally you would put these in separate files.
+const Movies = () => (
+  <View>
+    <Text>Movies</Text>
+  </View>
+)
+const Music = () => (
+  <View>
+    <Text>Music</Text>
+  </View>
+)
+const Books = () => (
+  <View>
+    <Text>Books</Text>
+  </View>
+)
 
-const AlbumsRoute = () => <Text>Albums</Text>;
+function AppTabView(props) {
+  const tabs = [
+    { key: 'Movies', label: 'Movies', barColor: '#00695C', icon: 'movie' },
+    { key: 'Music', label: 'Music', barColor: '#6A1B9A', icon: 'music-note' },
+    { key: 'Books', label: 'Books', barColor: '#1565C0', icon: 'book' }
+  ]
 
-const RecentsRoute = () => <Text>Recents</Text>;
+  const { navigation, descriptors } = props
+  const { routes, index } = navigation.state
+  const activeScreenName = routes[index].key
+  const descriptor = descriptors[activeScreenName]
+  const ActiveScreen = descriptor.getComponent()
 
-const BottomTab = () => {
-  const [index, setIndex] = React.useState(0);
-  const [routes] = React.useState([
-    { key: 'music', title: 'Music', icon: 'queue-music' },
-    { key: 'albums', title: 'Albums', icon: 'album' },
-    { key: 'recents', title: 'Recents', icon: 'history' },
-  ]);
-
-  const renderScene = BottomNavigation.SceneMap({
-    music: MusicRoute,
-    albums: AlbumsRoute,
-    recents: RecentsRoute,
-  });
+  const handleTabPress = useCallback(
+    newTab => navigation.navigate(newTab.key),
+    [navigation]
+  )
 
   return (
-    <BottomNavigation
-      navigationState={{ index, routes }}
-      onIndexChange={setIndex}
-      renderScene={renderScene}
-    />
-  );
-};
+    <View style={{ flex: 1 }}>
+      <View style={{ flex: 1 }}>
+        <ActiveScreen navigation={descriptor.navigation} />
+      </View>
 
-export default BottomTab;
+      <BottomNavigation
+        tabs={tabs}
+        activeTab={activeScreenName}
+        onTabPress={handleTabPress}
+        renderTab={({ tab, isActive }) => (
+          <FullTab
+            isActive={isActive}
+            key={tab.key}
+            label={tab.label}
+            renderIcon={() => <Icon name={tab.icon} size={24} color="white" />}
+          />
+        )}
+      />
+    </View>
+  )
+}
+
+const AppTabRouter = TabRouter({
+  Movies: { screen: Movies },
+  Music: { screen: Music },
+  Books: { screen: Books }
+})
+
+const AppNavigator = createNavigator(AppTabView, AppTabRouter, {})
+
+export default AppNavigator

@@ -29,20 +29,34 @@ export default StyleSheet.create({
 
     icon2: {
         position: "absolute",
-        top: 70
+        top: 70,
+        height: 100,
+        width: 100
     },
 
     icon3: {
         position: "absolute",
         top: 70,
-        right: 70
+        right: 70,
+        height: 100,
+        width: 100
         
     },
 
     icon4: {
         position: "absolute",
         top: 190,
-        left: 15
+        left: 15,
+        height: 100,
+        width: 100
+    },
+
+    icon5: {
+        position: "absolute",
+        top: 190,
+        left: 140,
+        height: 100,
+        width: 100  
     },
 
     textJump: {

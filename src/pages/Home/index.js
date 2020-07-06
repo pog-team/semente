@@ -7,6 +7,13 @@ import { FlatList } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { preventAutoHide } from 'expo/build/launch/SplashScreen';
 
+
+import home_icon from '../../assets/img/Home.png';
+import heart_icon from '../../assets/img/heart.png';
+import book_icon from '../../assets/img/Book.png';
+
+
+
 const data = [
   { id: '00001', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00002', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
@@ -14,9 +21,8 @@ const data = [
   { id: '00004', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00005', title: <Image style={{width:130, height:130,}} source={cover}/> }, 
   { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
-  { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
-  { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
-  { id: '00006', title: <Image style={{width:130, height:130,}} source={cover}/> },
+
+
 ];
 
 const formatData = (data, numColumns) => {
@@ -60,10 +66,13 @@ const numColumns = 3;
       <TextInput
       style={styles.SearchBar}
       placeholder= "Pesquisar pelo titulo, autor, categoria">
+
       </TextInput>
 
     <View style={styles.box}>
       <Text style={{ fontSize: 18, textAlign: 'left'}}>
+
+
         <Text style={{fontWeight: 'bold', fontSize: 16, color:'#fff' }}>
         Semeando conhecimento para o futuro 
       </Text>
@@ -71,6 +80,7 @@ const numColumns = 3;
         <Text style={{fontWeight: '300', color:'#fff', fontSize: 14}}>
         Interaja com os livros para descobrir novas  aventuras e soltar sua imaginação
         </Text>
+
       </Text>
       </View>
     </View>
@@ -145,4 +155,3 @@ const styles = StyleSheet.create({
   }
 
 });
-

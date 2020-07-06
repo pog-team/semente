@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'reac
 import { useNavigation } from '@react-navigation/native'
 
 import styles from './style'
-import Hover from '../../assets/img/Hover_Book.png'
+import Hover from '../../assets/img/Historia.jpeg'
 import Sound_Icon from '../../assets/img/soundOn.png'
 
 
@@ -23,8 +23,7 @@ export default function Story_Routes() {
                 </Image>
             </View>
             <View style={styles.book}>
-                <Image source={Hover} style={styles.hover}>
-                </Image>
+                
 
                 <Text style={styles.TitleText}>Você decide:</Text>
                 <TouchableOpacity><Text style={styles.ChoseText}>Escolha 1</Text></TouchableOpacity>

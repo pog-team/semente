@@ -23,15 +23,15 @@ export default function Welcome() {
 
      
         <Text style={styles.textHero}>Qual seu nome?</Text>
-        <TextInput
-style={styles.TextLabel} 
-        eOpacity style={styles.action} onPress={() => navigation.navigate('categoria')}>
 
- placeholder= "Digite seu nome ">
-  
+        <TextInput 
+        style={styles.TextLabel}
+        placeholder="Digite seu nome"
+        
+        ></TextInput>
+        <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Emocional')}>
 
-        </TextInput>
-        <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Home')}>
+ 
           <Text style={styles.actionText}>Entrar</Text>
         </TouchableOpacity> 
     </View>

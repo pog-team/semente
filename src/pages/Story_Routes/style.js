@@ -13,6 +13,12 @@ export default StyleSheet.create({
         height: 20,
         width: 20,
     },
+    hover: {
+      height: 380,
+      width: 350
+    },
+
+
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -52,7 +58,7 @@ export default StyleSheet.create({
       TitleText: {
           color: '#1B1C1E',
           fontWeight: "bold",
-          fontSize:24,
+          fontSize:28,
           textAlign: "center",
           paddingTop: 10
       },

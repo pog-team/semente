@@ -13,6 +13,13 @@ export default StyleSheet.create({
         height: 20,
         width: 20,
     },
+
+    hover: {
+      height: 350,
+      width: 300
+    },
+
+
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -30,7 +37,7 @@ export default StyleSheet.create({
     book: {
         justifyContent: 'center',
         alignItems: 'center',
-        paddingTop: 30,
+        paddingTop: 20,
     },
 
     action: {

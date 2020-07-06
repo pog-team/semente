@@ -9,6 +9,16 @@ export default StyleSheet.create({
         paddingTop: Constants.statusBarHeight + 34,
         backgroundColor: '#FEFEFE'
     },
+    sound: {
+        height: 20,
+        width: 20,
+    },
+
+    hover: {
+      height: 350,
+      width: 300
+    },
+
 
     header: {
         flexDirection: 'row',
@@ -24,28 +34,28 @@ export default StyleSheet.create({
         fontWeight: "bold"
     },
 
-    bookcase: {
-      paddingTop: 15
+    book: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 20,
     },
 
+    action: {
+        backgroundColor: '#192742',
+        borderRadius: 8,
+        height: 53,
+        width: 203,
+        justifyContent: 'center',
+        textAlign: 'center',
+        
+      },
 
-
-    book1: {
-      paddingTop: 220
-    },
-
-    book2: {
-      paddingTop: 170
-    },
-
-    
-
-    Image: {
-      height: 185,
-      width: 145
-    },
-
-   
+      actionText: {
+        color: '#fff',
+        fontSize: 15,
+        fontWeight: 'bold',
+        textAlign: "center"
+      },
       TitleText: {
           color: '#1B1C1E',
           fontWeight: "bold",
