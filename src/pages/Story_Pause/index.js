@@ -53,7 +53,7 @@ sonho era se tornar o maior e mais belo carvalho de todos e para isso precisava 
 
 Kali se balançou de um lado para outro até cair no chão e assim poder iniciar sua jornada rumo ao monte.
 </Text>
-                <TouchableOpacity><Text style={styles.ChoseText}> Proximo  </Text></TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Parte2')}><Text style={styles.ChoseText}> Proximo  </Text></TouchableOpacity>
 
             </View>
 

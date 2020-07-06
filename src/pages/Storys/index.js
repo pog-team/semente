@@ -46,18 +46,16 @@ export default function Welcome() {
                 </TouchableOpacity>   
             </View>
             <View style={styles.book}>
-                <Image source={Hover} style={styles.hover}>
-                </Image>
+                
 
-                <Text style={styles.TitleText}>Parabens você passou pela rota</Text>
+                <Text style={styles.TitleText}>Pobrezinha da Kaili!Clique no botão abaixo para mudar o seu destino</Text>
 
                 <Text style={styles.FinaleText}>(1/2)</Text>
 
-                <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Storys')}>
-          <Text style={styles.actionText}>Escolher Historia</Text>
+                <TouchableOpacity style={styles.action} onPress={() => navigation.navigate('Routes_Pause')}>
+          <Text style={styles.actionText}>Tentar Novamente</Text>
         </TouchableOpacity>
 
-        <Text style={styles.TryText}>Tentar de Novo</Text>
             </View>
 
 

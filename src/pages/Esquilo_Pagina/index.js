@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'reac
 import { useNavigation } from '@react-navigation/native'
 
 import styles from './style'
-import Hover from '../../assets/img/Capa.jpg'
+import Hover from '../../assets/img/Esquilo.png'
 import Sound_Icon from '../../assets/img/soundOn.png'
 
 import { Audio } from 'expo-av';
@@ -17,7 +17,7 @@ export default function Story_Pause() {
 
     async function playsound() {
         const playbackObject = await Audio.Sound.createAsync(
-            { uri: 'https://srv-file8.gofile.io/download/3uODKY/Parte%201%20(NOZ%20NA%20ARVORE).mp3' },
+            { uri: 'https://srv-file8.gofile.io/download/ww5Rc4/Parte%202%20(ESQUILO%20NA%20ARVORE).mp3' },
             { shouldPlay: true },
           );
         
@@ -47,13 +47,13 @@ export default function Story_Pause() {
             <View style={styles.book}>
                 <Image source={Hover} style={styles.hover}>
                 </Image>
-                <Text style={styles.TitleText}>    Em uma bela manhã, uma pequena noz chamada Kaili dormia no alto de um carvalho. Seu 
-sonho era se tornar o maior e mais belo carvalho de todos e para isso precisava estar no maior monte da floresta!
+                <Text style={styles.TitleText}>    Não muito distante dali, estava a espreita um esquilo que vigiava Kaili. O roedor pulou de galho em galho e foi se aproximando cada vez mais da pequena noz e disse:
 
 
-Kali se balançou de um lado para outro até cair no chão e assim poder iniciar sua jornada rumo ao monte.
+                - Então temos uma nova sementinha sonhando em ser um grande carvalho? Venha comigo, pequena!Tenho um baú cheio de coisas gostosas em minha casa!"
+
 </Text>
-                <TouchableOpacity><Text style={styles.ChoseText}> Proximo  </Text></TouchableOpacity>
+                <TouchableOpacity  onPress={() => navigation.navigate('Routes_Story')} ><Text style={styles.ChoseText}> Proximo  </Text></TouchableOpacity>
 
             </View>
 
