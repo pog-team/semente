@@ -4,8 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 const AppStack = createStackNavigator()
 
-import Welcome from './pages/Welcome'
-import Home from './pages/Estante'
+import Welcome from './pages/Tucano_Pagina' // welcome 
+import Home from './pages/Home'
 import Emocional from './pages/Emocional'
 
 import Storys from './pages/Storys'
@@ -13,7 +13,7 @@ import Routes_Story from './pages/Story_Routes'
 import Routes_Pause from './pages/Story_Pause'
 
 
-import Bookcases from './pages/Categoria'
+import Bookcases from './pages/Emocional'  /// categoria mudar depois
 import Fabulas from './pages/Fabulas'
 import Estante from './pages/Estante'
 
